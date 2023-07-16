@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Project</title>
     <link rel="stylesheet" href="/assets/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="/assets/css/util.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-   
-  <nav>
+  
+  <!-- Navbar Section       Start -->
+  <nav class="white z-depth-0">
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Logo</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="#!" class="blue-text">Home</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger blue-text"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="sass.html">Sass</a></li>
         <li><a href="badges.html">Components</a></li>
@@ -24,14 +26,31 @@
   </nav>
 
   <ul class="sidenav" id="mobile-demo">
-    <li><a href="sass.html">Sass</a></li>
-    <li><a href="badges.html">Components</a></li>
-    <li><a href="collapsible.html">Javascript</a></li>
-    <li><a href="mobile.html">Mobile</a></li>
+    <li><div class="user-view">
+      <div class="background">
+        <img src="assets/images/images.jpg" class="w-full">
+      </div>
+      <a href="#user"><img class="circle" src="assets/images/reddington.jpeg"></a>
+      <a href="#name"><span class="yellow-text name">Rey Redd</span></a>
+      <a href="#email"><span class="yellow-text email">reyred@gmail.com</span></a>
+    </div></li>
+    <li><a href="#!"><i class="material-icons red-text" >insert_link</i>Your Choices</a></li>
+    <li><a href="#!"><i class="material-icons red-text" >insert_link</i>Ryan Host</a></li>
+    <!-- <li><a href="#!">Second Link</a></li> -->
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Pages:</a></li>
+    <li><a class="waves-effect" href="#!">Home</a></li>
+    <li><a class="waves-effect" href="#!">User</a></li>
   </ul>
-    
+    <!-- Navbar section      End -->
 
-
+<!-- Home Section       Start -->
+<section class="flex-c-m flex-col sizefull p-r-20 p-l-20 p-t-100">
+  <img class="w-full max-w-250 " src="assets/images/images.jpg" alt="Our Ofiice LA">
+  <a href="/users.html" class="waves-effect waves-light btn blue darken-3 w-full max-w-250 m-t-10 m-b-10 rounded_pill">Users Manager</a>
+  <a href="/users.html" class="waves-effect waves-light btn blue darken-3 w-full max-w-250 m-t-10 m-b-10 rounded_pill">programing Tutorial</a>
+</section>
+<!-- Home section      End -->
     <script src="/assets/materialize/js/materialize.min.js"></script>
     <script src="/assets/js/main.js"></script>
 </body>
